@@ -52,7 +52,7 @@ const Contact = () => {
             <div className='ml-[530px] z-20 mt-16'>
             <Form/>
             </div>
-            <div className='flex flex-col gap-8 text-[#F1F1F1] z-20 relative right-28 bottom-96'>
+            <div className='flex flex-col gap-8 text-[#F1F1F1] z-20 relative right-28 bottom-96 w-96'>
                 <div className='flex gap-4 w-[500px]'>
                     <div className='w-[50%] h-full flex gap-2 py-2 border border-gray-600 items-center pl-4 bg-[#080808] rounded-xl'>
                        <div className='w-12 h-12 rounded-xl flex justify-center items-center text-xl hover:bg-gray-800 hover:duration-500 cursor-pointer'><IoCallOutline /></div>
