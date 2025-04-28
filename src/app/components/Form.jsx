@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { toast } from 'react-toastify';
+import { toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
@@ -94,7 +94,8 @@ const Form = () => {
        Submit
       </button>
     </form>
-
+       
+      <ToastContainer />
   </div>
 );
 };
