@@ -16,11 +16,13 @@ Professional landing page layout with sections like:
 
 Hero Section
 
-Features/Benefits
+Solutions
+
+About
+
+FAQ & Contact
 
 How it Works
-
-Call to Action
 
 Smooth animations and interactions using @react-spring/web and framer-motion.
 
