@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🚀 GoGetWell Product Website Redesign
+This is a redesigned version of the GoGetWell product website as per the assignment instructions.
+The objective was to transform the original website into a modern SAAS product website look and feel.
 
-## Getting Started
+📄 Assignment Details
+Assignment: Redesign the product website for GoGetWell.
 
-First, run the development server:
+Objective: Make it look and feel like a SAAS product website.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Scope: Desktop design only (Mobile responsiveness not included due to time constraints).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✨ Features
+Clean and minimal SAAS-style UI.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Professional landing page layout with sections like:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Hero Section
 
-## Learn More
+Features/Benefits
 
-To learn more about Next.js, take a look at the following resources:
+How it Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Call to Action
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Smooth animations and interactions using @react-spring/web and framer-motion.
 
-## Deploy on Vercel
+Reusable and modular React components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⚙️ Tech Stack
+Framework: Next.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Animations: Framer Motion, React Spring,React Bits
+
+Styling: TailwindCSS
+
+🚫 Limitations
+Not mobile responsive:
+Due to time limitations, mobile responsiveness (for tablet and mobile devices) has not been implemented in this version.
+This can be added with additional time for a fully responsive experience.
+Also due to time limitations it was very difficult to add components for login and post form submission but it can be added.
+
+🙏 Acknowledgments
+Thanks to the GoGetWell team for the opportunity to work on this assignment.
+
+📬 Contact
+For any queries, feel free to reach out:
+Name: Shubham Budhakr
+Email: shubhambudhakar@gmail.com
