@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+body{
+  overflow-x: hidden;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#0000, #0000)
+}
+
+.link-underline:hover {
+  background-size: 100% 2px;
+  background-position: 0 100% 
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #020530;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+.start-button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #362cfc;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.start-button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.start-button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.start-button:hover {
+  background-color: var(--hover-color);
+}
+
+.start-button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.start-button:hover .arrow:before {
+  right: 0;
+}
+
+.animated-border {
+  position: relative;
+  padding: 5px; /* Add padding for the border to be visible */
+  border-radius: 16px; /* Slightly bigger to match padding */
+  background: linear-gradient(45deg, #00f3fb, #00a2ff, #e7f1ff, #0011ff, #93a4f9, #7900fb, #2a82f6);
+  background-size: 400% 400%;
+  animation: animatedGradient 10s ease infinite;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(108, 246, 246, 0.558), 0 0 40px rgba(0, 119, 255, 0.5), 0 0 60px rgba(248, 249, 253, 0.656);
+}
+
+.animated-border > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px; /* Match inside radius */
+}
+
+/* Keyframes for moving background */
+@keyframes animatedGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+/* All Borders */
+.btn-1::before,
+.btn-1::after,
+.btn-1 span::before,
+.btn-1 span::after {
+  content: "";
+  position: absolute;
+  background: rgb(173, 173, 173);
+  transition: all 0.4s ease;
+}
+
+/* Top Border */
+.btn-1::before {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+}
+
+/* Bottom Border */
+.btn-1::after {
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+}
+
+/* Left Border */
+.btn-1 span::before {
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0%;
+}
+
+/* Right Border */
+.btn-1 span::after {
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  height: 0%;
+}
+
+/* Hover Animation */
+.btn-1:hover::before,
+.btn-1:hover::after {
+  width: 100%;
+}
+
+.btn-1:hover span::before,
+.btn-1:hover span::after {
+  height: 100%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+
+
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
